@@ -1,11 +1,14 @@
-import React from 'react'
+import React from "react";
 
-function Message() {
-    return (
-        <div>
+type messageType = {
+  avatar: string;
+  name: string;
+  message: string;
+  time: string;
+};
 
-        </div>
-    )
+function Message(props: messageType) {
+  return <div></div>;
 }
 
-export default Message
+export default Message;
