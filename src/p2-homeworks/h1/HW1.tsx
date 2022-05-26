@@ -5,7 +5,7 @@ const messageData = {
   avatar:
     " https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_eTHoHEyBCjd-p5MA-pUIvItDoaKI7e-A5KsHZrC715mj_B3YtZPF2Cw26mpv2Xzijqk&usqp=CAU",
   name: "Lama",
-  message: "hello",
+  message: "hello, my friends!",
   time: "22:00",
 };
 
