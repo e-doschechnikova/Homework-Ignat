@@ -1,19 +1,19 @@
-.content {
+.contentSecond {
   display: flex;
   align-items: center;
-  background-color: #e8e9eb;
+  background-color: #989aad;
   height: 300px;
 }
 
-.content img {
+.contentSecond img {
   width: 50px;
   height: 50px;
   border-radius: 50%;
   margin-right: 10px;
-  border: 1px solid rgb(0, 0, 0);
+  border: 1px solid rgb(255, 254, 254);
 }
 
-.messageContent {
+.messageContentSecond {
   display: inline-table;
   width: 200px;
   position: relative;
@@ -25,7 +25,7 @@
   border-radius: 12px 12px 12px 0;
 }
 
-.messageContent::before {
+.messageContentSecond::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -36,20 +36,18 @@
   box-shadow: 20px 0 0 0 #c6cdda;
 }
 
-.name {
+.nameSecond {
   display: flex;
   justify-content: start;
   color: #000000;
 }
 
-.message {
+.messageSecond {
   padding-right: 30px;
   color: #5a5b5e;
 }
 
-.time {
-  display: flex;
-  justify-content: flex-end;
+.timeSecond {
   padding-right: 10px;
   color: aliceblue;
 }
