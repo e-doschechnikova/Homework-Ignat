@@ -14,8 +14,8 @@ function AlternativeMessageFriend(props: messageTypeFriend) {
       <div>
         <img src={props.avatar} alt="avatar" />
       </div>
-      <div className={styles.messageFriend}>
-        <div className={styles.nameFriens}>{props.name}</div>
+      <div className={styles.messageFriendContainer}>
+        <div className={styles.nameFriend}>{props.name}</div>
         <div className={styles.messageFriend}>{props.message}</div>
         <div className={styles.timeFriend}>{props.time}</div>
       </div>

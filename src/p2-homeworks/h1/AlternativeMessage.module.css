@@ -48,6 +48,8 @@
 }
 
 .timeSecond {
+  display: flex;
+  justify-content: end;
   padding-right: 10px;
   color: aliceblue;
 }
