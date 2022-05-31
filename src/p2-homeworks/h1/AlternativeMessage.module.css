@@ -45,6 +45,7 @@
 .messageSecond {
   padding-right: 30px;
   color: #5a5b5e;
+  word-wrap: break-word;
 }
 
 .timeSecond {

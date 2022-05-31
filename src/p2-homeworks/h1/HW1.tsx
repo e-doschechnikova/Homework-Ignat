@@ -1,7 +1,6 @@
 import React from "react";
 import Message from "./Message";
 import AlternativeMessage from "./AlternativeMessage";
-import AlternativeMessageFriend from "./AlternativeMessageFriend";
 
 const messageData = {
   avatar:
@@ -11,20 +10,12 @@ const messageData = {
   time: "22:00",
 };
 
-const messageDataSecondPerson = {
+const messageDataAlternative = {
   avatar:
     " https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_eTHoHEyBCjd-p5MA-pUIvItDoaKI7e-A5KsHZrC715mj_B3YtZPF2Cw26mpv2Xzijqk&usqp=CAU",
   name: "Lama Mila",
   message: "hello, how are you?",
-  time: "22:00",
-};
-
-const messageDataFriend = {
-  avatar:
-    "https://i.pinimg.com/originals/14/63/d8/1463d8d75b82c06f8c602a86c3a7e8c3.jpg",
-  name: "Lama Lima",
-  message: "hi! I`m fine, and u?",
-  time: "22:00",
+  time: "14:07",
 };
 
 function HW1() {
@@ -42,16 +33,10 @@ function HW1() {
       {/*для личного творчества, могу проверить*/}
       <hr />
       <AlternativeMessage
-        avatar={messageDataSecondPerson.avatar}
-        name={messageDataSecondPerson.name}
-        message={messageDataSecondPerson.message}
-        time={messageDataSecondPerson.time}
-      />
-      <AlternativeMessageFriend
-        avatar={messageDataFriend.avatar}
-        name={messageDataFriend.name}
-        message={messageDataFriend.message}
-        time={messageDataFriend.time}
+        avatar={messageDataAlternative.avatar}
+        name={messageDataAlternative.name}
+        message={messageDataAlternative.message}
+        time={messageDataAlternative.time}
       />
       <hr />
     </div>

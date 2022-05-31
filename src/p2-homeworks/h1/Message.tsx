@@ -1,14 +1,14 @@
 import React from "react";
 import styles from "./Message.module.css";
 
-type messageType = {
+type messagePropsType = {
   avatar: string;
   name: string;
   message: string;
   time: string;
 };
 
-function Message(props: messageType) {
+function Message(props: messagePropsType) {
   return (
     <div className={styles.content}>
       <div>
