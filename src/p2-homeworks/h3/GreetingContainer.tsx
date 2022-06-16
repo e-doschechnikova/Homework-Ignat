@@ -1,38 +1,57 @@
-import React, {useState} from 'react'
-import Greeting from './Greeting'
+import React, { ChangeEvent, useState } from "react";
+import Greeting from "./Greeting";
 
 type GreetingContainerPropsType = {
-    users: any // need to fix any
-    addUserCallback: any // need to fix any
-}
+  users: string;
+  addUserCallback: (name: string) => void;
+  count: number;
+};
 
 // более простой и понятный для новичков
 // function GreetingContainer(props: GreetingPropsType) {
 
 // более современный и удобный для про :)
 // уровень локальной логики
-const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUserCallback}) => { // деструктуризация пропсов
-    const [name, setName] = useState<any>('') // need to fix any
-    const [error, setError] = useState<any>('') // need to fix any
+const GreetingContainer: React.FC<GreetingContainerPropsType> = ({
+  users,
+  addUserCallback,
+  count,
+}) => {
+  // деструктуризация пропсов
+  const [name, setName] = useState<string>("");
+  const [error, setError] = useState<string | null>(null);
 
-    const setNameCallback = (e: any) => { // need to fix any
-        setName('') // need to fix
+  const setNameCallback = (e: ChangeEvent<HTMLInputElement>) => {
+    setName(e.currentTarget.value);
+    if (e.currentTarget.value.trim() !== "") {
+      setError("");
+    } else {
+      setError("empty value");
     }
-    const addUser = () => {
-        alert(`Hello  !`) // need to fix
+  };
+
+  const addUser = () => {
+    if (name.trim() !== "") {
+      alert(`Hello ${name}!`);
+      addUserCallback(name);
+      setName("");
+      setError("");
+    } else {
+      setError("empty value");
     }
+  };
 
-    const totalUsers = 0 // need to fix
+  const totalUsers = count;
 
-    return (
-        <Greeting
-            name={name}
-            setNameCallback={setNameCallback}
-            addUser={addUser}
-            error={error}
-            totalUsers={totalUsers}
-        />
-    )
-}
+  return (
+    <Greeting
+      name={name}
+      setNameCallback={setNameCallback}
+      addUser={addUser}
+      error={error}
+      totalUsers={totalUsers}
+    />
+  );
+};
 
-export default GreetingContainer
+export default GreetingContainer;
