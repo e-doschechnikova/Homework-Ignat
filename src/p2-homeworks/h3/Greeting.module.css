@@ -1,7 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Marathi&display=swap");
 .someClass {
+}
 
+.container {
+  flex-direction: column;
+  height: 150px;
+  font-family: "Tiro Devanagari Marathi", serif;
+  background-color: #989aad;
 }
 
 .error {
-    border: 1px solid red;
+  border: 1px solid #ff033e;
+}
+
+.notError {
+  border: 1px solid greenyellow;
+}
+
+.errorValue {
+  padding: 0 10px;
+  color: #ff033e;
 }
