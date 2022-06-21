@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Affairs from "./Affairs";
+import s from "./Affairs.module.css";
 
 export type AffairPriorityType = "high" | "low" | "middle";
 
@@ -47,7 +48,7 @@ function HW2() {
     setAffairs(deleteAffair(affairs, _id));
 
   return (
-    <div>
+    <div className={s.container}>
       <hr />
       homeworks 2{/*should work (должно работать)*/}
       <Affairs
