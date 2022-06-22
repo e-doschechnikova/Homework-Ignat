@@ -49,7 +49,7 @@ function HW2() {
 
   return (
     <div className={s.container}>
-      <hr />
+    
       homeworks 2{/*should work (должно работать)*/}
       <Affairs
         data={filteredAffairs}
