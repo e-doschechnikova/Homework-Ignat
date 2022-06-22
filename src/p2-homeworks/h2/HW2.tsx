@@ -13,10 +13,10 @@ export type FilterType = "all" | AffairPriorityType;
 
 const defaultAffairs: Array<AffairType> = [
   { _id: 1, name: "React", priority: "high" },
-  { _id: 2, name: "anime", priority: "low" },
-  { _id: 3, name: "games", priority: "low" },
-  { _id: 4, name: "work", priority: "high" },
-  { _id: 5, name: "html & css", priority: "middle" },
+  { _id: 2, name: "JS", priority: "low" },
+  { _id: 3, name: "C++", priority: "low" },
+  { _id: 4, name: "PHP", priority: "high" },
+  { _id: 5, name: "HTML & CSS", priority: "middle" },
 ];
 
 export const filterAffairs = (
@@ -49,7 +49,6 @@ function HW2() {
 
   return (
     <div className={s.container}>
-    
       homeworks 2{/*should work (должно работать)*/}
       <Affairs
         data={filteredAffairs}

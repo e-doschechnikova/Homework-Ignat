@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Marathi&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Joan&display=swap");
 .container {
+  font-family: "Joan", serif;
   background-color: #dcdcdc;
 }

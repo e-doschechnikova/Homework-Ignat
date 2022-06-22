@@ -1,13 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Marathi&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Joan&display=swap");
 .content {
   display: flex;
   align-items: center;
   height: 250px;
 
-  font-family: "Tiro Devanagari Marathi", serif;
+  font-family: "Joan", serif;
 
-  background-color: #DCDCDC
+  background-color: #dcdcdc;
 }
 
 .content img {
