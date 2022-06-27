@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Marathi&display=swap");
+
+.containerButtons {
+  margin: 10px;
+
+  font-family: "Tiro Devanagari Marathi", serif;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: space-between;
+
+  color: #4c2f27;
+}
+
+.name {
+  font-weight: bold;
+  margin-right: 2rem;
+}
+
+.button {
+  justify-self: end;
+}

@@ -1,6 +1,7 @@
 import React from "react";
 import SuperButton from "../h4/common/c2-SuperButton/SuperButton";
 import { AffairType } from "./HW2";
+import styles from "./Affair.module.css";
 
 type AffairPropsType = {
   affair: AffairType;
@@ -13,10 +14,13 @@ function Affair(props: AffairPropsType) {
   };
 
   return (
-    <div>
-      {props.affair.name}
-
-      <SuperButton onClick={() => deleteCallback(props.affair._id)} red>
+    <div className={styles.containerButtons}>
+      <div className={styles.name}>{props.affair.name}</div>
+      <SuperButton
+        className={styles.button}
+        onClick={() => deleteCallback(props.affair._id)}
+        red
+      >
         X
       </SuperButton>
     </div>

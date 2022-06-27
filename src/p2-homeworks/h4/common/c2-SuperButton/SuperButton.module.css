@@ -2,7 +2,7 @@
 
 .default {
   margin: 5px 5px;
-  padding: 3px;
+  padding: 4px 4px;
 
   font-family: "Tiro Devanagari Marathi", serif;
   font-size: 15px;
@@ -13,24 +13,25 @@
   min-width: min-content;
   max-width: max-content;
 
-  background-color: #c7d0cc48;
-  border: 1px solid #606e8c;
+  background-color: #dabdab;
+  border: 1px solid #79443b;
   border-radius: 5px;
-  color: #1a1a1a;
+  color: #4c2f27;
 
   box-shadow: rgba(45, 35, 66, 0.6) 0 8px 10px,
-    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #919baf 0 -3px 0 inset;
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #bc987e 0 -3px 0 inset;
   transform: translateY(-2px);
   cursor: pointer;
 }
 
 .default:hover {
-  background: #919baf;
+  background: #4c2f27;
+  color: #dabdab;
   box-shadow: none;
 }
 
 .default:disabled {
-  background: #919baf;
+  background: #dabdab;
   opacity: 60%;
   pointer-events: none;
 }
@@ -51,7 +52,7 @@
   background-color: #cd5c5c;
   border: 1px solid #ab274f;
   border-radius: 5px;
-  color: #1a1a1a;
+  color: #4c2f27;
 
   box-shadow: rgba(223, 17, 62, 0.5) 0 8px 10px,
     rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #ab274f 0 -3px 0 inset;
@@ -61,6 +62,6 @@
 
 .red:hover {
   color: white;
-  background: #CB4154;
+  background: #cb4154;
   box-shadow: none;
 }
