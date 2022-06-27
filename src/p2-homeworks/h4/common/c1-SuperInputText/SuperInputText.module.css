@@ -1,18 +1,36 @@
-.superInput {
-}
+@import url("https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Marathi&display=swap");
 
-.inputClass {
-  padding: 10px;
-  margin: 10px 0;
-  border: 0;
-  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+.superInput {
+  font-family: "Tiro Devanagari Marathi", serif;
+
+  width: 20%;
+  padding: 5px 10px;
+  margin: 3px 0;
+
+  border: 2px solid #1e5945;
+  background-color: rgba(207, 230, 219, 0.418);
+
+  border-radius: 4px;
+  box-shadow: 0 0 10px 1px rgba(8, 75, 47, 0.336);
 }
 
 .errorInput {
-  border: 3px solid lime;
-  background: #E52B50
+  font-family: "Tiro Devanagari Marathi", serif;
+
+  width: 20%;
+  padding: 5px 10px;
+  margin: 3px 0;
+
+  border: 2px solid #e52b50;
+  border-radius: 4px;
+
+  background-color: rgba(255, 255, 255, 0.685);
+  box-shadow: 0 0 10px 1px rgba(153, 39, 39, 0.336);
 }
 
 .error {
-  color: #E52B50;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #e52b50;
 }

@@ -1,6 +1,6 @@
-.blue {
+/* .blue {
     border-bottom: 5px solid blue;
-}
+} */
 
 .column {
     display: flex;
@@ -8,6 +8,6 @@
     align-items: center;
 }
 
-.testSpanError {
+/* .testSpanError {
     color: blue;
-}
+} */

@@ -37,12 +37,13 @@ function Affairs(props: AffairsPropsType) {
 
   return (
     <div className={styles.container}>
-      {mappedAffairs}
-
-      <SuperButton onClick={setAll}>All</SuperButton>
-      <SuperButton onClick={setHigh}>High</SuperButton>
-      <SuperButton onClick={setMiddle}>Middle</SuperButton>
-      <SuperButton onClick={setLow}>Low</SuperButton>
+      <div>{mappedAffairs}</div>
+      <div className={styles.containerButtons}>
+        <SuperButton onClick={setAll}>All</SuperButton>
+        <SuperButton onClick={setHigh}>High</SuperButton>
+        <SuperButton onClick={setMiddle}>Middle</SuperButton>
+        <SuperButton onClick={setLow}>Low</SuperButton>
+      </div>
     </div>
   );
 }
