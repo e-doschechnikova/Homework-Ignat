@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Marathi&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Marathi&display=swap");
 .someClass {
 }
 
@@ -20,4 +20,13 @@
 .errorValue {
   padding: 0 10px;
   color: #ff033e;
+} */
+
+.users {
+  font-size: 40px;
+  color: blueviolet;
+}
+.usersGreeting {
+  font-size: 25px;
+  color: aqua;
 }

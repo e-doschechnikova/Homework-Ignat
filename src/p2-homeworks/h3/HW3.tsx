@@ -27,7 +27,7 @@ function HW3() {
         addUserCallback={addUserCallback}
         count={count}
       />
-      <div>
+      <div className={s.users}>
         {users.map((el: string, _id: string) => {
           return <div key={_id}>{el}</div>;
         })}
