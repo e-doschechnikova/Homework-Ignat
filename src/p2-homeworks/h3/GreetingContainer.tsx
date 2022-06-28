@@ -1,5 +1,6 @@
 import React, { ChangeEvent, useState } from "react";
 import Greeting from "./Greeting";
+import s from "./Greeting.module.css";
 
 type GreetingContainerPropsType = {
   users: string;
@@ -44,13 +45,15 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({
   const totalUsers = count;
 
   return (
-    <Greeting
-      name={name}
-      setNameCallback={setNameCallback}
-      addUser={addUser}
-      error={error}
-      totalUsers={totalUsers}
-    />
+    <div className={s.container}>
+      <Greeting
+        name={name}
+        setNameCallback={setNameCallback}
+        addUser={addUser}
+        error={error}
+        totalUsers={totalUsers}
+      />
+    </div>
   );
 };
 

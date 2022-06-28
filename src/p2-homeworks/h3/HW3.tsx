@@ -19,7 +19,7 @@ function HW3() {
   };
 
   return (
-    <div className={s.container}>
+    <div>
       <hr />
       homeworks 3{/*should work (должно работать)*/}
       <GreetingContainer
@@ -28,11 +28,13 @@ function HW3() {
         count={count}
       />
       <div className={s.users}>
-        {users.map((el: string, _id: string) => {
-          return <div key={_id}>{el}</div>;
-        })}
+        <ul>
+          {users.map((el: string, _id: string) => {
+            return <li key={_id}>{el}</li>;
+          })}
+        </ul>
       </div>
-      <hr />
+
       {/*для личного творчества, могу проверить*/}
       {/*<AlternativeGreeting/>*/}
       <hr />

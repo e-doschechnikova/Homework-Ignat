@@ -1,15 +1,15 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Marathi&display=swap");
-.someClass {
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Marathi&display=swap");
 .container {
+  display: flex;
   flex-direction: column;
-  height: 150px;
-  font-family: "Tiro Devanagari Marathi", serif;
-  background-color: #fffafa;
+  align-items: center;
+
+  width: 100%;
+
+  text-align: center;
 }
 
-.error {
+/* .error {
   border: 1px solid #ff033e;
 }
 
@@ -22,11 +22,30 @@
   color: #ff033e;
 } */
 
-.users {
-  font-size: 40px;
-  color: blueviolet;
+li {
+  list-style-type: none;
+}
+
+li::before {
+  content: "◌";
+
+  color: #4c2f27;
+  font-size: 25px;
 }
 .usersGreeting {
+  width: 50px;
+  margin: 10px;
+
+  color: #4c2f27;
+  font-weight: bold;
+  font-size: 20px;
+
+  border-radius: 5px;
+  border: 1px solid #79443b;
+
+  background-color: #dabdab;
+}
+.users {
   font-size: 25px;
-  color: aqua;
+  color: #ab274f;
 }

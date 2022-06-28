@@ -19,15 +19,14 @@ const Greeting: React.FC<GreetingPropsType> = (
 
   return (
     <div className={s.container}>
+      <span className={s.usersGreeting}>{totalUsers}</span>
       <SuperInputText
         value={name}
         onChange={setNameCallback}
         error={error}
         onEnter={addUser}
       ></SuperInputText>
-
       <SuperButton onClick={addUser}>add</SuperButton>
-      <span className={s.usersGreeting}>{totalUsers}</span>
     </div>
   );
 };
