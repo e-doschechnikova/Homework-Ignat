@@ -1,10 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Joan&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Marathi&display=swap");
+
+body {
+  font-family: "Tiro Devanagari Marathi", serif;
+}
 .content {
   display: flex;
   align-items: center;
   height: 250px;
 
-  font-family: "Joan", serif;
+  font-family: "Tiro Devanagari Marathi", serif;
 
   /* background-color: #dcdcdc; */
 }
@@ -20,7 +24,7 @@
 }
 
 .messageContent {
-  width: 200px;
+  width: 250px;
 
   position: relative;
 
@@ -53,14 +57,16 @@
   min-width: 150px;
   max-width: 300px;
 
-  word-wrap: break-word;
+  padding-top: 5px;
 
+  font-size: 20px;
   color: #ab274f;
+
+  word-wrap: break-word;
 }
 
 .name {
-  font-size: 20px;
-
+  font-size: 25px;
   color: #4c2f27;
 }
 
@@ -68,5 +74,6 @@
   display: flex;
   justify-content: flex-end;
 
+  font-size: 15px;
   color: aliceblue;
 }
