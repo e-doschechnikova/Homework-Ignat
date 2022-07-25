@@ -1,5 +1,5 @@
 import React from "react";
 
 export const JuniorPlus = () => {
-  return <div></div>;
+  return <div> Junior+</div>;
 };

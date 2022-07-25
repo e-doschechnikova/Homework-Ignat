@@ -5,10 +5,10 @@ import { PATH } from "../h5/Routes";
 function Header() {
   return (
     <div>
-      <NavLink to={'/l'}>PRE-JUNIOR</NavLink>
-      {/* <NavLink to={PATH.PRE_JUNIOR}>PRE-JUNIOR</NavLink>
+      <NavLink to={"/l"}>PRE-JUNIOR</NavLink>
+      <NavLink to={PATH.PRE_JUNIOR}>PRE-JUNIOR</NavLink>
       <NavLink to={PATH.JUNIOR}>JUNIOR</NavLink>
-      <NavLink to={PATH.JUNIOR_PLUS}>JUNIOR-PLUS</NavLink> */}
+      <NavLink to={PATH.JUNIOR_PLUS}>JUNIOR-PLUS</NavLink>
     </div>
   );
 }
