@@ -5,7 +5,7 @@ import styles from "./HW5.module.css";
 
 function Header() {
   const [isOpen, setOpen] = useState<boolean>(false);
-  const activeMenuStyle = isOpen && styles.menuActive;
+  const openMenuStyle = isOpen && styles.menuOpen;
   const showMenu = () => {
     setOpen(true);
   };
@@ -21,14 +21,14 @@ function Header() {
         onMouseLeave={hideMenu}
       >
         <Hamburger
-          color={"#79443b"}
+          color={"#4c2f27"}
           size={20}
           toggled={isOpen}
           toggle={setOpen}
         />
-        <div className={`${styles.menu} ${activeMenuStyle}`}>
+        <div className={`${styles.menu} ${openMenuStyle}`}>
           <li>
-            <NavLink to="/pre-junior"> Pre-Junior </NavLink>
+            <NavLink to="/pre-junior">Pre-Junior</NavLink>
           </li>
           <li>
             <NavLink to="/junior">Junior</NavLink>

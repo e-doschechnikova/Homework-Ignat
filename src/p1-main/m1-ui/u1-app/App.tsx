@@ -10,10 +10,10 @@ import Header from "../../../p2-homeworks/h5-rrd-v6/Header";
 function App() {
   return (
     <div className={s.App}>
-      <HW1 />
+      {/* <HW1 />
       <HW2 />
       <HW3 />
-      <HW4 />
+      <HW4 /> */}
       <HW5 />
     </div>
   );
