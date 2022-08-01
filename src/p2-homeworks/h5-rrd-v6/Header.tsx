@@ -4,13 +4,13 @@ import { NavLink } from "react-router-dom";
 import styles from "./HW5.module.css";
 
 function Header() {
-  const [isActive, setIsActive] = useState<boolean>(false);
-  const activeMenuStyle = isActive && styles.menuActive;
+  const [isOpen, setOpen] = useState<boolean>(false);
+  const activeMenuStyle = isOpen && styles.menuActive;
   const showMenu = () => {
-    setIsActive(true);
+    setOpen(true);
   };
   const hideMenu = () => {
-    setIsActive(false);
+    setOpen(false);
   };
 
   return (
@@ -23,8 +23,8 @@ function Header() {
         <Hamburger
           color={"#79443b"}
           size={20}
-          toggled={isActive}
-          toggle={setIsActive}
+          toggled={isOpen}
+          toggle={setOpen}
         />
         <div className={`${styles.menu} ${activeMenuStyle}`}>
           <li>
