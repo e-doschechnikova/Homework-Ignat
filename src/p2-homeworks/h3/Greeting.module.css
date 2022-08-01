@@ -27,7 +27,7 @@ li {
 }
 
 li::before {
-  content: "▷";
+  content: "";
 
   color: #4c2f27;
   font-size: 25px;
