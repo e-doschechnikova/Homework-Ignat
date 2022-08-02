@@ -1,11 +1,11 @@
 import React from "react";
+import HW7 from "../../h7/HW7";
 
 export const Junior = () => {
   return (
     <div>
-      JUNIOR
-      {/* <HW7 />
-      <HW8 />
+      <HW7 />
+      {/* <HW8 />
       <HW9 /> */}
     </div>
   );
