@@ -27,7 +27,13 @@
 .default:hover {
   background: #4c2f27;
   color: #dabdab;
+
+  font-weight: 600;
+
   box-shadow: none;
+
+  transition: 0.3s;
+  letter-spacing: 1px;
 }
 
 .default:disabled {
@@ -62,7 +68,12 @@
 
 .red:hover {
   color: #eb4c42;
-  
+
+  font-weight: 600;
+
   background: #480607;
   box-shadow: none;
+
+  transition: 0.3s;
+  letter-spacing: 1px;
 }
