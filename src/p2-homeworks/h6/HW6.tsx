@@ -21,7 +21,9 @@ function HW6() {
         <SuperEditableSpan
           value={value}
           onChangeText={setValue}
-          spanProps={{ children: value ? undefined : "enter text..." }}
+          spanProps={{
+            children: value ? undefined : "click and ✎ write something...",
+          }}
         />
       </div>
       <div className={styles.buttonContainer}>
@@ -30,7 +32,6 @@ function HW6() {
       </div>
       {/*для личного творчества, могу проверить*/}
       {/*<AlternativeSuperEditableSpan/>*/}
-      <hr />
     </div>
   );
 }

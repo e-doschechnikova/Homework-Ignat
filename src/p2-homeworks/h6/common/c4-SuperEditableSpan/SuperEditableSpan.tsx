@@ -5,6 +5,7 @@ import React, {
   useState,
 } from "react";
 import SuperInputText from "../../../h4/common/c1-SuperInputText/SuperInputText";
+import styles from "../../HW6.module.css";
 
 // тип пропсов обычного инпута
 type DefaultInputPropsType = DetailedHTMLProps<
@@ -59,7 +60,7 @@ const SuperEditableSpan: React.FC<SuperEditableSpanType> = ({
     onDoubleClick && onDoubleClick(e);
   };
 
-  const spanClassName = `${"сделать красивый стиль для спана"} ${className}`;
+  const spanClassName = `${styles.editSpan} ${className}`;
 
   return (
     <>
