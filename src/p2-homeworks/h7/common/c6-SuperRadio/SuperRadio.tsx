@@ -11,8 +11,8 @@ type DefaultRadioPropsType = DetailedHTMLProps<
 >;
 
 type SuperRadioPropsType = DefaultRadioPropsType & {
-  options?: any[];
-  onChangeOption?: (option: any) => void;
+  options?: Array<string>;
+  onChangeOption?: (option: string) => void;
 };
 
 const SuperRadio: React.FC<SuperRadioPropsType> = ({
