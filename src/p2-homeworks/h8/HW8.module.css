@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Marathi&display=swap");
+
+.listItems {
+    margin: 5px 15px;
+
+    letter-spacing: 1px;
+
+    display: grid;
+    align-items: center;
+    grid-template-columns: 2fr 2fr 1fr;
+
+}
+
+.peopleContainer {
+    padding: 10px;
+    margin: 10px 15px;
+
+    font-size: 20px;
+    font-family: "Tiro Devanagari Marathi", serif;
+    font-weight: lighter;
+
+    background-color: #dabdab;
+    border: 1px solid #4c2f27;
+    border-radius: 5px;
+
+    width: 310px;
+}
+
+.age {
+    font-weight: bold;
+
+    margin-left: 100px;
+
+    letter-spacing: 2px;
+
+}
+
+.buttonsContainer {
+    margin-left: 60px;
+}

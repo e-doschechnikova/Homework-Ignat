@@ -13,7 +13,7 @@ type CheckPeopleAT = {
 export type ActionType = SortPeopleAT | CheckPeopleAT
 
 
-export const homeWorkReducer = (state: Array<UserType>, action: any): any => { // need to fix any
+export const homeWorkReducer = (state: Array<UserType>, action: ActionType): Array<UserType> => { // need to fix any
     switch (action.type) {
         case 'sort': {
             // need to fix
@@ -25,5 +25,18 @@ export const homeWorkReducer = (state: Array<UserType>, action: any): any => { /
         }
         default:
             return state
+    }
+}
+
+export const SortPeopleAC = (payload: string): SortPeopleAT => {
+    return {
+        type: "sort", payload
+    }
+
+}
+
+export const CheckPeopleAC = (payload: number): CheckPeopleAT => {
+    return {
+        type: "check", payload
     }
 }
