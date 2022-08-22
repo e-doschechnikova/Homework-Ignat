@@ -35,14 +35,15 @@ function HW8() {
 
     return (
         <div>
-            <hr/>
+
             homeworks 8
 
             {/*should work (должно работать)*/}
             <div className={styles.peopleContainer}>{finalPeople} </div>
             <div/>
 
-            <div className={styles.buttonsContainer}><SuperButton onClick={sortUp}>sort up</SuperButton>
+            <div className={styles.buttonsContainer}>
+                <SuperButton onClick={sortUp}>sort up</SuperButton>
                 <SuperButton onClick={sortDown}>sort down</SuperButton>
                 <SuperButton onClick={check}>check 18</SuperButton></div>
 

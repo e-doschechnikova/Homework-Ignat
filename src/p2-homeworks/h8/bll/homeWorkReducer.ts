@@ -16,12 +16,17 @@ export type ActionType = SortPeopleAT | CheckPeopleAT
 export const homeWorkReducer = (state: Array<UserType>, action: ActionType): Array<UserType> => { // need to fix any
     switch (action.type) {
         case 'sort': {
+            const newState = [...state].sort((a, b) => {
+                if (a.name > b.name) return 1
+                if (a.name < b.name) return -1
+                else return 0
+            })
             // need to fix
-            return state
+            return action.payload === "up" ? newState : newState.reverse()
         }
         case 'check': {
             // need to fix
-            return state
+            return state.filter(age => age.age >= action.payload)
         }
         default:
             return state
